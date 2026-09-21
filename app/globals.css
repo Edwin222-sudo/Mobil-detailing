@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 :root {
+  --brand-primary: #0056b3;       /* Mobil blue — change per customer */
+  --brand-primary-dark: #003d80;
+  --brand-bg: #0a0a0a;
   --foreground-rgb: 255, 255, 255;
   --background-start-rgb: 0, 0, 0;
   --background-end-rgb: 10, 15, 30;
@@ -18,24 +21,26 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.text-brand-blue {
-  color: #0056b3;
+.text-brand {
+  color: var(--brand-primary);
 }
 
-.bg-brand-blue {
-  background-color: #0056b3;
+.bg-brand {
+  background-color: var(--brand-primary);
 }
 
-.border-brand-blue {
-  border-color: #0056b3;
+.hover\:bg-brand-dark:hover {
+  background-color: var(--brand-primary-dark);
 }
 
-/* Blue glow effect for headers, matching the logo */
+.border-brand {
+  border-color: var(--brand-primary);
+}
+
 .glow-text {
   text-shadow: 0 0 15px rgba(0, 150, 255, 0.7);
 }
 
-/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
