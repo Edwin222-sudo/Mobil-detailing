@@ -6,11 +6,7 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        "brand-blue": "#0056b3",
-      },
-    },
+    extend: {},
   },
   plugins: [],
 };
