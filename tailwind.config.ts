@@ -8,12 +8,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          blue: "#0056b3",
-        },
+        "brand-blue": "#0056b3",
       },
     },
   },
   plugins: [],
 };
+
 export default config;
